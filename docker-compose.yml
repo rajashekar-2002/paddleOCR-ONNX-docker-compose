@@ -1,0 +1,10 @@
+
+
+services:
+  ocr-onnx:
+    build: ./
+    container_name: "paddle-onnx"
+    volumes:
+      - ./captured_images:/captured_images
+    tty: true
+    stdin_open: true
